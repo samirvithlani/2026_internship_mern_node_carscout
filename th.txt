@@ -1,0 +1,12 @@
+
+npm init --y
+npm i express dotenv mongoose cors bcrypt
+app.js
+src
+ controllers
+ models
+ routes
+ utils
+ .env
+
+ 
