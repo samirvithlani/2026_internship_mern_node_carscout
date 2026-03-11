@@ -9,4 +9,42 @@ src
  utils
  .env
 
+
+ email:
+ service gmail:
+package: nodemailer
+
+email : pythonforsamir@gmail.com : sender
+password:"app password" 
+
+how to generate app password:
+1. 2 step verification on
+
+///////////////////////////////
+
+mail doubts:
+abc@gmail.com :dummy
+otp based confirmation
+<--------------------------->
+
+:FOREIGN KEY RELATION:
+
+table:esociety:
+1)society:_id,name,....
+
+table:bloc/wing: _id,wingname,fk society id
+
+-------------------------
+ecomm:
+product : pname,price,...... pcategrory:fk
+
+
+
+
+
+
+
+
+
+
  

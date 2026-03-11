@@ -1,0 +1,18 @@
+1)Login part:
+  backedn frontend
+2)email sending
+  backend
+  task:send html page and attachment
+
+  <<------------------------>
+Thursday:
+create all models: and apprrove it with "AMIT SIR"
+
+MONDAY:
+create all models according to approved data disctionary
+create crud operations for all models
+
+
+  
+
+  
