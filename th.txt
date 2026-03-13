@@ -38,6 +38,23 @@ table:bloc/wing: _id,wingname,fk society id
 ecomm:
 product : pname,price,...... pcategrory:fk
 
+--------------------------------------------
+table1  <--> table2
+joins
+zomato --> address
+
+user table --> address -->
+user --> userAddresses
+<<---------------------->>
+MODELS:-->
+CRUD:CREATE RETRIVE UPDATE AND DELETE
+
+react:
+HOME PAGE:
+LOGIN
+SIGNUP
+ROLE BASE REDIRECT:
+
 
 
 

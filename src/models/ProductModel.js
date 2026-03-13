@@ -13,13 +13,19 @@ const productSchema = new Schema({
         type:mongoose.Types.ObjectId,
         ref:"categories" // check in category model model name must pass here to bind relation
     },
+    status:{
+        type:String,
+        enum:["active","inactive"],
+        default:"active"
+    },
     //assume we have subcatrgoty also
     // subCatgoryId:{
     //     type:mongoose.Types.ObjectId,
     //     ref:"subCategories" // model name.
     // },
-    sellerId:{
-        type:mongoose.Types.ObjectId,
-        ref:"users" //check user model..
-    }
+    // sellerId:{
+    //     type:mongoose.Types.ObjectId,
+    //     ref:"users" //check user model..
+    // }
 })
+module.exports = mongoose.model("products",productSchema)

@@ -2,10 +2,11 @@ const mongoose = require("mongoose")
 const Schema = mongoose.Schema;
 
 const categorySchema = new Schema({
+    //_id
     name:{
         type:String
     },
-    statys:{
+    status:{
         type:String,
         enum:["Active","Inactive"],
         default:"Active"

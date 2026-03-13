@@ -12,6 +12,12 @@ DBConnection()
 const userRoutes = require("./src/routes/UserRoutes")
 app.use("/user",userRoutes)
 
+const categoryRoutes = require("./src/routes/CategoryRoutes")
+app.use("/category",categoryRoutes)
+
+const productRoutes = require("./src/routes/ProductRoutes")
+app.use("/product",productRoutes)
+
 
 
 
