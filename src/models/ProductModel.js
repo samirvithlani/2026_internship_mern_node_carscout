@@ -18,6 +18,9 @@ const productSchema = new Schema({
         enum:["active","inactive"],
         default:"active"
     },
+    imagePath:{
+        type:String
+    }
     //assume we have subcatrgoty also
     // subCatgoryId:{
     //     type:mongoose.Types.ObjectId,

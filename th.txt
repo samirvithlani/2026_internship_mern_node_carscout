@@ -55,13 +55,29 @@ LOGIN
 SIGNUP
 ROLE BASE REDIRECT:
 
+middleware: filter:
+validation
+auth
+fileupload
+----------------------------
+
+file upload....
+programatticaly copy file from 1 location and past in other location
+storage:
+database
+server folder
+cloud storage
+
+iphone: 5 images:
+database insted of image path: image url
+
+file upload:
+multer
+npm i multer
+
+npm i cloudinary
+
+:model -->crud:
 
 
-
-
-
-
-
-
-
- 
+frontend:
