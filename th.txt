@@ -78,6 +78,21 @@ npm i multer
 npm i cloudinary
 
 :model -->crud:
-
-
 frontend:
+
+AUTH:
+Auhtentication:
+Authorization:
+
+MVC: form : email password:
+
+API secure: email password
+TOKEN BASED AUTH: --> email password --> userObject
+Login : token: {abc:----} --> token
+
+JWT --> outh2
+json web token
+
+npm i jsonwebtoken
+
+
