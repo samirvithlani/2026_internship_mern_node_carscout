@@ -96,3 +96,18 @@ json web token
 npm i jsonwebtoken
 
 
+login -->token -->localstorage -->other component ---> token -->localstorage
+
+x -com -->2 api call --> token
+after login -->token --> localstorage x -->comp -->get
+
+token verify:
+
+middleware:
+auth middleware:
+token:req.headers --> token --> jwt verfy
+Bearer token
+
+
+
+

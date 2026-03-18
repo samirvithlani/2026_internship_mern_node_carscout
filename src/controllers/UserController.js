@@ -47,7 +47,7 @@ const loginUser= async(req,res)=>{
             if(isPasswordMatched){
 
                    //when user is authenticated... we will geenrate token..
-                const token = jwt.sign(foundUserFromEmail.toObject(),secret)
+                const token = jwt.sign(foundUserFromEmail.toObject(),secret,{expiresIn:60})
                 //const token = jwt.sign({id:foundUserFromEmail._id},secret)
 
                 res.status(200).json({
