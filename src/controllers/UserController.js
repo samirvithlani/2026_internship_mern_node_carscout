@@ -23,6 +23,7 @@ const registerUser = async(req,res)=>{
 
         
     }catch(err){
+        console.log(err)
         res.status(500).json({
             message:"error while creating user",
             err:err
@@ -47,7 +48,7 @@ const loginUser= async(req,res)=>{
             if(isPasswordMatched){
 
                    //when user is authenticated... we will geenrate token..
-                const token = jwt.sign(foundUserFromEmail.toObject(),secret,{expiresIn:60})
+                const token = jwt.sign(foundUserFromEmail.toObject(),secret,{expiresIn:60*24*7})
                 //const token = jwt.sign({id:foundUserFromEmail._id},secret)
 
                 res.status(200).json({

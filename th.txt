@@ -109,5 +109,10 @@ token:req.headers --> token --> jwt verfy
 Bearer token
 
 
+-->middleware -->decodeUser -->userObjecy --> token --> --req.user --> controller
+
+:-->try global auth middleware:
+
+
 
 

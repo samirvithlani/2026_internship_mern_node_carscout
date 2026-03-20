@@ -26,6 +26,9 @@ const createProduct = async(req,res)=>{
 }
 
 const getAllProducts = async(req,res)=>{
+    console.log(req.user) // loggedINuser - ->token get
+    console.log(req.user._id)
+
     try{
 
         //const products = await productSchema.find({status:"active"})
@@ -43,7 +46,30 @@ const getAllProducts = async(req,res)=>{
         })
     }
 }
+const getProductBySellerId = async(req,res)=>{
+
+    try{
+        console.log(req.user) // loggedINuser - ->token get
+        console.log(req.user._id)
+
+        //const products = await productSchema.find({status:"active"})
+        //const products = await productSchema.find({status:"active",sellerId:req.user._id}).populate("categoryId")
+        const products = await productSchema.find({status:"active"}).populate("categoryId")
+        res.status(200).json({
+            message:"products fetched successfully",
+            products:products
+        })
+
+    }catch(err){
+        console.log(err)
+        res.status(500).json({
+            message:"error while fetching products",
+            err:err
+        })
+    }
+}
 module.exports ={
     createProduct,
-    getAllProducts
+    getAllProducts,
+    getProductBySellerId
 }

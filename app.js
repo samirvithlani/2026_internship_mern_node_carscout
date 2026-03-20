@@ -6,6 +6,8 @@ require("dotenv").config()
 app.use(express.json())
 app.use(cors()) //allow all requests
 
+//authmiddleware.. -->exlude login and signup api
+
 const DBConnection = require("./src/utils/DBConnection")
 DBConnection()
 
