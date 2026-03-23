@@ -113,6 +113,11 @@ Bearer token
 
 :-->try global auth middleware:
 
+ui -->forgortpassword -->button --> componet --> forgtoepassword --> input email
+-->POST API --> forgotpassword api,, --> email req.body  -->database check -->if yes --> reset link -->mail --> click
+
+
+
 
 
 
