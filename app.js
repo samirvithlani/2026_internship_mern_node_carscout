@@ -21,6 +21,8 @@ const productRoutes = require("./src/routes/ProductRoutes")
 app.use("/product",productRoutes)
 
 
+const paymentRoutes = require("./src/routes/PaymentRoutes")
+app.use("/payment",paymentRoutes)
 
 
 const PORT = process.env.PORT
